@@ -677,7 +677,7 @@ details[open] {
     }
 }
 
-@media (width > 900px) and (width <= 1302) {
+@media (width > 900px) and (width <= 1302px) {
     .p-frame-skill {
        padding-top: 5rem;
     }
