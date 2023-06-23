@@ -157,8 +157,8 @@ a:hover {
     display: flex;
     align-items: center;
     background-color: #ffc0cb3b;
-    height: 70vh;
-    padding: 1.5rem;
+    /* height: 70vh; */
+    padding: 3rem;
 }
 
 
@@ -207,6 +207,15 @@ a:hover {
     background-color: rgba(128, 128, 128, 0.534);
 }
 
+
+.img-size-card{
+    width: auto;
+}
+
+.div-skills-fram-back{
+    position: relative;
+    top: 12%;
+}
 /*--------------- Progress --------------*/
 .skillProgress {
 
@@ -594,6 +603,7 @@ details[open] {
 } */
 
 
+/* Smartphone */
 /*--------- inférieure à 460px -------------*/
 @media (max-width: 460px) {
 
@@ -613,14 +623,55 @@ details[open] {
         flex-direction: column;
     }
 
+    .div-card-achiev {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .card-achiev .fadedbox {
+        opacity: 1;
+
+    }
+    .card-achiev .title-fade {
+        opacity: 1;
+        margin: auto;
+    }
+
 }
+
+
+@media(width <=900px) and (width >= 460px) {
+    .div-card-achiev {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .card-achiev .fadedbox {
+        opacity: 1;
+
+    }
+    .card-achiev .title-fade {
+        opacity: 1;
+        margin: auto;
+    }
+
+    .card-achiev .fadedbox {
+   
+        padding: 5rem 0;
+
+    }
+
+
+}
+
 
 /* @media (hover: hover) {
     .card-achiev {
         display: none;
     }
 } */
-
+/*------------- Tablette -----------*/
 @media (min-width: 900px) and (max-width: 1355px) {
 
     .card-achiev .fadedbox {
@@ -635,7 +686,6 @@ details[open] {
     .card-achiev .title-fade {
         font-size: x-large;
         margin: auto;
-      
     }
     .title-fade{
         padding: .5rem;
@@ -648,72 +698,8 @@ details[open] {
 
 }
 
-@media(width <=800px) {
-    .section-presentation {
-
-        height: auto;
-    }
-
-    .main-contact {
-
-        background-image: url(../../img/contact_fond.jpg);
-        background-position: right center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 154vh;
-
-        /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); */
-        /* height: 120%;
-        width: 100%; */
-    }
-
-    .div-link-contact {
-        display: contents;
-    }
-
-    .article-business-card {
-        /* flex-direction: column; */
-        display: block;
-        width: 100%;
-    }
-
-    .div-business-card {
-        max-width: 100%;
-        margin: auto;
-    }
-
-    .div-link-contact a {
-        color: black;
-    }
 
 
-}
 
-@media(width <=900px) and (width >= 460px) {
-    .div-card-achiev {
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-
-    .card-achiev .fadedbox {
-        opacity: 1;
-
-    }
-
-
-    .card-achiev .title-fade {
-        opacity: 1;
-        margin: auto;
-    }
-
-    .card-achiev .fadedbox {
-   
-        padding: 5rem 0;
-
-    }
-
-
-}
 
 /* ----------CSS footer ----------------------*/

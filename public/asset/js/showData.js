@@ -64,23 +64,25 @@ function viewCardProgress(data) {
     `;
 }
 
-// 
-function viewCard(data, size = null) {
+// .div-skills-fram-back
+function viewCard(data, className = null) {
 
     return `
-    <div class="m-2 p-2" style="width: fit-content;">
-        <div class="d-flex align-items-center flex-column">
-            <div style="" class="" title="${data.name}">
-                <div class="">  
+
+        <div class="m-2 p-2" style="width: fit-content;">
+            <div class="d-flex align-items-center flex-column">
+                <div style="" class="" title="${data.name}">
+                    <div class="">  
                     
-                    <img class="w-75" src="${data.image}" alt="image" style="width: ${size};">
+                    <img class="img-size-card" src="${data.image}" alt="image">
+                    </div>
                 </div>
-            </div>
-            <div class="title-competence">
-                <p class="m-2">${data.title}</p>
-            </div>
-        </div>
-    </div> 
+                <div class="title-competence">
+                    <p class="m-2">${data.title}</p>
+                </div>
+             </div>
+        </div> 
+
     `;
 }
 
@@ -141,7 +143,7 @@ function viewAchiev(data) {
  * @param {string|boolean} layer frontend or backend | true or false
  * @param {boolean} isLang true if language false if framework, nodeElement
  */
-function eachLanguaguesFrameWork(layer, isLang, callbackView = viewCard) {
+function eachLanguaguesFrameWork(layer, isLang, callbackView = viewCard, paramViewCardClassName = null) {
 
 
     let keyType = "";
@@ -153,9 +155,13 @@ function eachLanguaguesFrameWork(layer, isLang, callbackView = viewCard) {
     } else if (layer == "backend" || layer == false) {
         keyType = isLang ? languages.backend : framework.backend
         elemId = isLang ? idSectionLangBack : idSectionFramBack;
+        // if (!isLang) {
+        //     // paramViewCardClassName = "div-skills-fram-back"
+
+        // }
     }
     // console.log(keyType);
-    eachData(keyType, elemId, callbackView)
+    eachData(keyType, elemId, callbackView, paramViewCardClassName)
 
 }
 
@@ -166,11 +172,11 @@ function eachLanguaguesFrameWork(layer, isLang, callbackView = viewCard) {
  * @param {string} elm 
  * @param {Function} callback 
  */
-function eachData(allSkills, elm, callback = viewCard) {
+function eachData(allSkills, elm, callback = viewCard, paramViewCardClassName = null) {
     let chaine = "";
 
     allSkills.forEach((skill) => {
-        chaine += callback(skill)
+        chaine += callback(skill, paramViewCardClassName)
     });
 
     elm.innerHTML = chaine;
@@ -286,7 +292,7 @@ showProgress.forEach(btnProgress => {
 // });
 
 // /**
-//  * 
+//  *
 //  * @param {Array} dataObj data iterable
 //  * @param {String} className string is equals to class name
 //  * @param {Array} arrayNodeList is list to nodeList
