@@ -208,14 +208,14 @@ a:hover {
 }
 
 
-.img-size-card{
+.img-size-card {
     width: auto;
 }
 
-.div-skills-fram-back{
-    position: relative;
-    top: 12%;
+.div-skills-fram-back {
+    padding-top: 2rem;
 }
+
 /*--------------- Progress --------------*/
 .skillProgress {
 
@@ -628,19 +628,25 @@ details[open] {
         height: auto;
         margin: auto;
     }
+
     .card-achiev .fadedbox {
         opacity: 1;
 
     }
+
     .card-achiev .title-fade {
         opacity: 1;
         margin: auto;
     }
 
+    /* .div-skills-fram-back{
+        padding:1rem;
+    } */
+
 }
 
-
-@media(width <=900px) and (width >= 460px) {
+/*------------- Tablette -----------*/
+@media(width >=460px) and (width <=900px) {
     .div-card-achiev {
         width: 100%;
         height: auto;
@@ -651,13 +657,13 @@ details[open] {
         opacity: 1;
 
     }
+
     .card-achiev .title-fade {
         opacity: 1;
         margin: auto;
     }
 
     .card-achiev .fadedbox {
-   
         padding: 5rem 0;
 
     }
@@ -665,13 +671,24 @@ details[open] {
 
 }
 
+@media (width <=900px) {
+    .div-skills-fram-back {
+        flex-direction: column;
+    }
+}
+
+@media (width > 900px) and (width <= 1302) {
+    .p-frame-skill {
+       padding-top: 5rem;
+    }
+}
 
 /* @media (hover: hover) {
     .card-achiev {
         display: none;
     }
 } */
-/*------------- Tablette -----------*/
+
 @media (min-width: 900px) and (max-width: 1355px) {
 
     .card-achiev .fadedbox {
@@ -687,14 +704,18 @@ details[open] {
         font-size: x-large;
         margin: auto;
     }
-    .title-fade{
+
+    .title-fade {
         padding: .5rem;
     }
+
     .card-body-achiev>p {
         font-size: inherit;
     }
 
-
+    /* .div-skills-fram-back {
+        padding-top: 3rem;
+    } */
 
 }
 

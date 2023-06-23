@@ -21,8 +21,6 @@ const showProgress = document.querySelectorAll("[class*='showProgress-']")
 const achievementShow = document.querySelector('#achievementShow');
 
 
-console.log(datas.skills);
-
 // _______________________________________
 // ---------------- skills --------------
 const skills = datas.skills
