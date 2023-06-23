@@ -677,12 +677,16 @@ details[open] {
     }
 }
 
-@media (width > 900px) and (width <= 1302px) {
+@media (width > 900px) and (width <= 1301px) {
     .p-frame-skill {
        padding-top: 5rem;
     }
 }
-
+@media (width >= 1347px) {
+    .p-frame-skill {
+       padding-top: 2rem;
+    }
+}
 /* @media (hover: hover) {
     .card-achiev {
         display: none;
