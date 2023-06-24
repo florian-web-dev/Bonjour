@@ -91,7 +91,7 @@ function ifTrueNone(navbarSupportedContent, topelm) {
     }
 }
 
-
+console.log(window.innerWidth);
 function reportWindowSize() {
 
     let phone = window.innerWidth < 992;
