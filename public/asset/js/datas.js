@@ -64,10 +64,10 @@ const datas = {
             "frontend": [
                 {
                     "id": 1,
-                    "title": "Vue.js",
-                    "name": "Vue js",
+                    "title": "VueJs",
+                    "name": "vueJs",
                     "value": 75,
-                    "image": "public/img/framework/vueJS.svg"
+                    "image": "public/img/framework/vueJs.svg"
                 },
                 {
                     "id": 1,
