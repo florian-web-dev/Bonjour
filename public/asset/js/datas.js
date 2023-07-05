@@ -387,7 +387,7 @@ const datas = {
                 "sizeImg": "3rem"
             }, {
                 "id": 2,
-                "name": "vueJS",
+                "name": "vueJs",
                 "sizeImg": "3rem"
             }],
             "analyse": [
