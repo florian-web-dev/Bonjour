@@ -65,9 +65,9 @@ const datas = {
                 {
                     "id": 1,
                     "title": "VueJs",
-                    "name": "VueJs",
+                    "name": "vueJs",
                     "value": 75,
-                    "image": "public/img/framework/VueJs.svg"
+                    "image": "public/img/framework/vueJs.svg"
                 },
                 {
                     "id": 1,
