@@ -62,17 +62,16 @@ function viewCardProgress(data) {
     `;
 }
 
-// .div-skills-fram-back
 function viewCard(data, className = null) {
 
-    return `
+    if (data.name == "Bootstrap") {
+        return `
 
         <div class="m-2 p-2" style="width: fit-content;">
             <div class="d-flex align-items-center flex-column">
                 <div style="" class="" title="${data.name}">
-                    <div class="">  
-                    
-                    <img class="img-size-card" src="${data.image}" alt="image">
+                    <div class="test">  
+                        ${data.svg}
                     </div>
                 </div>
                 <div class="title-competence">
@@ -82,8 +81,24 @@ function viewCard(data, className = null) {
         </div> 
 
     `;
-}
+    }
+    return `
 
+        <div class="m-2 p-2" style="width: fit-content;">
+            <div class="d-flex align-items-center flex-column">
+                <div style="" class="" title="${data.name}">
+                    <div class="">  
+                        <img class="img-size-card" src="${data.image}" alt="image">
+                        <p class="m-0">${data.title}</p>
+                    </div>
+                </div>
+                
+             </div>
+        </div> 
+
+    `;
+}
+//  
 function viewFormation(data) {
     return `
     <h6><u>Titre professionnel :</u> <strong title="${data.titre}"> ${data.titre}</strong></h6>

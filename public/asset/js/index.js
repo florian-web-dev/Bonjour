@@ -76,8 +76,9 @@ function darkMode() {
 
     sections.forEach(section => {
         section.classList.toggle('bg-dark')
-        // section.classList.toggle('.text-light')
+        console.log(section);
     });
+
     body.classList.toggle('bg-dark')
     body.classList.toggle('text-light')
     navbar.classList.toggle('bg-dark')
@@ -208,13 +209,13 @@ ifTrueNone(navbarSupportedContent, topelm);
 
 
 // /**
-//  * la fonction addElmt ajoute un element html a un element parent 
-//  * 
+//  * la fonction addElmt ajoute un element html a un element parent
+//  *
 //  * @param {string} elmIdParent selecteur CSS
 //  * @param {string} noeudCre Type de nodeName / noeud
 //  * @param {string} classNameParam Nom de attibute class du noeud crée
 //  * @param {string} newContent contenu text de noeudCre, ne prend pas en charge le html
-//  * 
+//  *
 //  */
 // function addElmt(elmIdParent, noeudCre, classNameParam, newContent) {
 
