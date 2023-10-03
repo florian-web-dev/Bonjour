@@ -212,11 +212,8 @@ function checkDataByKeyObj(key, value) {
 
     } if (key == "analyse") {
         eachData(value, idSectionUml, viewList2);
-
-    } if (key == "tools") {
-        eachData(value, idSectionTools);
-
-    } if (key == "cms") {
+    }
+    if (key == "cms") {
         eachData(value, idSectionCms);
 
     }

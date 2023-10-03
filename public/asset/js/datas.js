@@ -165,22 +165,6 @@ const datas = {
                 "content": ""
             }
         ],
-        "tools": [
-            {
-                "id": 1,
-                "title": "GitHub",
-                "name": "GitHub",
-                "value": 40,
-                "image": "public/img/tools/github-mark.svg"
-            },
-            {
-                "id": 1,
-                "title": "GitLab",
-                "name": "GitLab",
-                "value": 40,
-                "image": "public/img/tools/gitlab.svg"
-            }
-        ],
         "cms": [
             {
                 "id": 3,
@@ -218,7 +202,7 @@ const datas = {
             "id": 1,
             "title": "Suivi Séance",
             "slug": "suivi-seance",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "Projet web Java.",
             "context": "Concepteur Développeur Application",
             "linkGit": "https://github.com/florian-web-dev/Contenu_seance",
@@ -290,7 +274,7 @@ const datas = {
             "id": 2,
             "title": "Food Easy Home",
             "slug": "food-easy-home",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "Projet site E-commerce, vanilla",
             "context": "Développeur Web Web Mobil",
             "linkGit": "https://github.com/florian-web-dev/Cont",
@@ -357,7 +341,7 @@ const datas = {
             "id": 3,
             "title": "Mini Projet",
             "slug": "mini-projet",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "Plusieurs projet Vuejs/Adroid/ionic",
             "context": "Concepteur Développeur Application et Autodidacte",
             "linkGit": "",
@@ -405,7 +389,7 @@ const datas = {
             "id": 4,
             "title": "Projet Api rest full",
             "slug": "projet-api",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "Api Java / Api Lavarel",
             "context": "Autodidacte",
             "linkGit": "",
@@ -457,7 +441,7 @@ const datas = {
             "id": 5,
             "title": "Cinema",
             "slug": "cinema",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "Spring Boot",
             "context": "Concepteur Développeur Application ",
             "linkGit": "",
@@ -504,7 +488,7 @@ const datas = {
             "id": 6,
             "title": "E-commerce Laravel",
             "slug": "e-commerce-lara",
-            "imgUrl":"",
+            "imgUrl": "",
             "subtitle": "E-commerce",
             "context": "Autodidacte",
             "linkGit": "",
